@@ -11,8 +11,6 @@ contract Deploy is Script {
     function run() public {
         vm.startBroadcast();
 
-        new MintableERC20("Token1", "T1");
-        new MintableERC20("Token2", "T2");
         new DEX();
 
         vm.stopBroadcast();
